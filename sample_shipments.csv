@@ -1,0 +1,7 @@
+shipment_id,status,days_in_transit,delivery_attempts,customer_phone,zone,courier
+S-901,in_transit,2,0,01000000001,Tanta East,Courier A
+S-902,out_for_delivery,3,2,01000000002,Zefta,Courier B
+S-903,in_transit,7,0,01000000003,El Mahalla,Courier A
+S-904,returned,6,3,01000000004,Kafr El Zayat,Courier C
+S-905,delivered,3,1,01000000005,Tanta East,Courier B
+S-906,out_for_delivery,4,3,01000000006,El Mahalla,Courier C
