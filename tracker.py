@@ -186,7 +186,7 @@ def board_svg(rep, source_name):
                '<line x1="556" y1="516" x2="972" y2="516" stroke="#FFFFFF" stroke-opacity="0.6"/>'
                '<line x1="556" y1="546" x2="972" y2="546" stroke="#FFFFFF" stroke-opacity="0.6"/>'
                '<line x1="556" y1="576" x2="972" y2="576" stroke="#FFFFFF" stroke-opacity="0.6"/>'
-               '<text x="570" y="507" class="tb1">EXCEPTION TRACKER — SHIPMENT EXCEPTION BOARD</text>'
+               '<text x="570" y="507" class="tb1">EXCEPTION TRACKER, SHIPMENT EXCEPTION BOARD</text>'
                f'<text x="570" y="537" class="tb2">CHECKED {rep["total_shipments"]} · ACT TODAY {rep["exception_count"]}</text>'
                f'<text x="570" y="567" class="tb2">RULES: STUCK ≥ {th.get("stuck_days", 5)}D · PIN ≥ {th.get("pin_attempts", 2)} ATT · '
                f'ESCALATE ≥ {th.get("escalate_attempts", 3)} ATT</text>'
@@ -214,7 +214,7 @@ def write_html_report(rep, path, source_name="shipments.csv"):
     doc = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exception Board — shipments that need a human today</title>
+<title>Exception Board, shipments that need a human today</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
