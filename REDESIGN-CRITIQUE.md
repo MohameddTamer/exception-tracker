@@ -1,4 +1,4 @@
-# Redesign Critique — Exception Tracker (Blueprint board + English pass)
+# Redesign Critique, Exception Tracker (Blueprint board + English pass)
 
 Redesign executed 2026-10-24 against `DESIGN-RESEARCH.md` §3.12 and the
 18-item anti-list. This file is the evidence record.
@@ -6,7 +6,7 @@ Redesign executed 2026-10-24 against `DESIGN-RESEARCH.md` §3.12 and the
 ## What changed
 
 - `tracker.py`: the HTML report was rebuilt from a Georgia-and-cards page
-  with one SVG bar chart into a Blueprint Spatial Board — engineering blue
+  with one SVG bar chart into a Blueprint Spatial Board, engineering blue
   `#123A6B` on `#0C2A50`, white line work over a 25-unit drawing grid,
   Space Grotesk for zone names, IBM Plex Mono for ids, coordinates and the
   title block. Every shipment plots as a node inside its zone region;
@@ -26,7 +26,7 @@ Redesign executed 2026-10-24 against `DESIGN-RESEARCH.md` §3.12 and the
   A/B/C) so the bundled demo draws a real board.
 - `tests/test_tracker.py`: the one HTML assertion updated from "SVG chart
   by action type" to the board's real markers (board title, a plotted
-  route's action type, Space Grotesk, the UNZONED fallback region — the
+  route's action type, Space Grotesk, the UNZONED fallback region, the
   fixture deliberately ships no zone column, so the fallback is itself
   under test).
 - `README.md`: `--report` description rewritten, optional columns
@@ -40,7 +40,7 @@ Redesign executed 2026-10-24 against `DESIGN-RESEARCH.md` §3.12 and the
 - Tests: **19/19 before, 19/19 after** (`python3 tests/test_tracker.py`).
 - Numbers unchanged: the sample run's terminal output after the redesign
   is byte-identical to the pre-redesign baseline (diff clean, excluding
-  the "HTML report written" notice) — **6 shipments checked, 4 need action
+  the "HTML report written" notice), **6 shipments checked, 4 need action
   today**, the same four (S-902 call_customer_window, S-903 open_trace,
   S-904 reship_or_refund, S-906 escalate_supervisor) with the same actions.
 - The generated board contains exactly **4 route groups** and its title
@@ -53,9 +53,9 @@ Redesign executed 2026-10-24 against `DESIGN-RESEARCH.md` §3.12 and the
 ## Anti-list items killed in this project
 
 One-long-page card stack (6), KPI row (5), rounded-everything (4),
-traffic-light palette (7 — white/orange drawing logic instead), no brand
-mark (17 — the drawn compass mark), proportional numbers (16), absent
-motion (18 — draw-on routes that encode the route itself, with a
+traffic-light palette (7, white/orange drawing logic instead), no brand
+mark (17, the drawn compass mark), proportional numbers (16), absent
+motion (18, draw-on routes that encode the route itself, with a
 reduced-motion path).
 
 ## Honest gaps
